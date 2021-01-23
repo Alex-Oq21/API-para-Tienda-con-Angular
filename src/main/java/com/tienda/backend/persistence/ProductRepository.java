@@ -1,21 +1,22 @@
 package com.tienda.backend.persistence;
 
 import com.tienda.backend.persistence.crud.ProductoCrudRepository;
-import com.tienda.backend.persistence.entity.Producto;
+import com.tienda.backend.persistence.entity.Product;
 import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public class ProductoRepository {
+public class ProductRepository {
     private ProductoCrudRepository productoCrudRepository;
 
-    public List<Producto> getAll(){
-        return (List<Producto>) productoCrudRepository.findAll();
+    public List<Product> getAll(){
+        return (List<Product>) productoCrudRepository.findAll();
     }
 
-    public Producto save(Producto producto){
-        return productoCrudRepository.save(producto);
+    public Product save(Product product){
+        return productoCrudRepository.save(product);
     }
+
     public void delete(int idProducto){
         productoCrudRepository.deleteById(idProducto);
     }

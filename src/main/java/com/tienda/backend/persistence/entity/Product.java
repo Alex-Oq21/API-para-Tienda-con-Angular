@@ -5,23 +5,22 @@ import java.math.BigDecimal;
 
 @Entity
 @Table(name = "productos")
-public class Producto {
+public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "idproducto")
-    private Integer idProducto;
-
+    private Integer idProduct;
     private String image;
-    private  String title;
+    private String title;
     private BigDecimal price;
     private String description;
 
     public Integer getIdProducto() {
-        return idProducto;
+        return idProduct;
     }
 
     public void setIdProducto(Integer idProducto) {
-        this.idProducto = idProducto;
+        this.idProduct = idProducto;
     }
 
     public String getImage() {
