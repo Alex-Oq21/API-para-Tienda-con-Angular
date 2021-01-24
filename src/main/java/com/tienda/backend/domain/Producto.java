@@ -4,18 +4,18 @@ import java.math.BigDecimal;
 
 public class Producto {
 
-    private int ProductoId;
+    private int productoId;
     private String imagen;
     private String titulo;
     private BigDecimal precio;
     private String descripcion;
 
     public int getProductoId() {
-        return ProductoId;
+        return productoId;
     }
 
     public void setProductoId(int productoId) {
-        ProductoId = productoId;
+        this.productoId = productoId;
     }
 
     public String getImagen() {
